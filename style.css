@@ -1,0 +1,95 @@
+/*==== estilo toda la pagina ====*/
+body {
+    font-family: "trebuchet ms", Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 238, 243);
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 150%;
+}
+
+/*==== estilo de navegacion ====*/
+nav {
+    background-color: #4dbb50;
+    color: rgb(198, 165, 165);
+    padding: 15px;
+    text-align: center;
+
+    display: inline-block; /* CAMBIO: requerido */
+    width: 80%;            /* CAMBIO: requerido */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* nav li {
+    display: inline-block;
+    margin-right: 0.15px;
+} */
+/* CAMBIO: estilo li comentado según consigna */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CAMBIO: selector descendente */
+nav img {
+    width: 10%;
+}
+
+/*==== principal ====*/
+main {
+    padding: 20px 40px;
+    background-color: rgb(223, 201, 201);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*==== galeria ====*/
+main img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 8px;
+    border: 2px solid #930404;
+}
+
+/*==== GRID ====*/
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* CAMBIO: solo imágenes dentro de grid */
+.grid img {
+    width: 100%;
+}
+
+/*==== FLEX ====*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*==== ACCESIBILIDAD ====*/
+.skip-link {
+    position: absolute;
+    left: -999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 10px;
+}
